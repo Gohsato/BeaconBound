@@ -1,6 +1,8 @@
 # Proj. BEACON BOUND
 A project to detect IR beacons from UAVs
 
+opencv docs: https://docs.opencv.org/3.4/
+
 ## Setup:
 Checkout this page for setting up a virtual environment: https://docs.python-guide.org/dev/virtualenvs/
 ```
@@ -15,5 +17,4 @@ python intro_cv.py
 ```
 
 ## TODO:
-look into lighter versions of opencv
 
