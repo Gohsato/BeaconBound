@@ -1,4 +1,6 @@
 # Proj. BEACON BOUND
+python 3
+
 A project to detect IR beacons from UAVs
 
 opencv docs: https://docs.opencv.org/3.4/
