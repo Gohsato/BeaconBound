@@ -7,3 +7,26 @@ bottom right is (len(x),len(y))
 
 images are stored as (x,y,c)  
 where c = (B,G,R) values
+
+## Links
+
+opencv concepts:
+https://docs.opencv.org/3.4/d2/d96/tutorial_py_table_of_contents_imgproc.html
+
+brightest pixel:
+https://www.pyimagesearch.com/2014/09/29/finding-brightest-spot-image-using-python-opencv/
+
+Thresholding:
+https://docs.opencv.org/3.4/d7/d4d/tutorial_py_thresholding.html
+
+
+## March 6th
+Currently it works pretty well.
+
+Current Limitations:  
+- the beacon needs to be the brightest thing.  
+    - It can account for noise
+    - another large, bright object will mess it up
+
+Further work:
+- Automate radius **selection**
