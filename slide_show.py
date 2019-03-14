@@ -6,7 +6,7 @@ from highlighter import highlight
 
 if __name__ == "__main__":
 
-    directory_names = ["images","negatives"]
+    directory_names = ["images","negatives","positives"]
 
     for directory_name in directory_names: 
         directory = os.fsencode(directory_name)
