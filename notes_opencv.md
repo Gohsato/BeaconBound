@@ -30,3 +30,10 @@ Current Limitations:
 
 Further work:
 - Automate radius **selection**
+
+## March 13th
+Thought over the week of some new ideas:
+- Use circle detection
+- Find average brightness, find brightess pixel
+  - Then calculate deviation, if deviation is big enough -> positive
+- look at histograms for more ideas

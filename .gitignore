@@ -1,3 +1,5 @@
 .vscode
 venv
 links.txt
+__pycache__
+negatives/
