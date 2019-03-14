@@ -2,6 +2,7 @@ import os
 import cv2
 
 from histogram import grey_hist
+from highlighter import highlight
 
 if __name__ == "__main__":
 
@@ -15,8 +16,12 @@ if __name__ == "__main__":
             if filename.endswith(".jpg"):
                 file_path = directory_name+"/"+ filename
                 img = cv2.imread(file_path)
-                print(filename)
+                img2 = img
+                print(f"{filename}  shape: {img.shape}", end=" ")
                 grey_hist(img)
+                highlight(img2)
+                print()
+                cv2.waitKey(0)
                 continue
             else:
                 continue

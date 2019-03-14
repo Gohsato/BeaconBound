@@ -32,10 +32,9 @@ def color_hist(src):
                 ( 0, 0, 255), thickness=2)
     cv.imshow('Source image', src)
     cv.imshow('calcHist Demo', histImage)
-    cv.waitKey()
 
-def grey_hist(img):
-    src = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
+def grey_hist(src):
+    src = cv.cvtColor(src, cv.COLOR_BGR2GRAY)
     histImage = np.zeros((hist_h, hist_w, 3), dtype=np.uint8)
     hist = cv.calcHist(src, [0], None, [HIST_SIZE], HIST_RANGE, accumulate=ACCUMULATE)
     cv.normalize(hist, hist, alpha=0, beta=hist_h, norm_type=cv.NORM_MINMAX)
@@ -45,11 +44,11 @@ def grey_hist(img):
                 ( 255, 0, 0), thickness=2)
     cv.imshow('Source image', src)
     cv.imshow('calcHist Demo', histImage)
-    cv.waitKey()
 
 
 if __name__ == "__main__":
     src = cv.imread('negatives/15442923.jpg')
     grey_hist(src)
+    cv.waitKey(0)
     exit()
     

@@ -20,3 +20,4 @@ python intro_cv.py
 
 ## TODO:
 
+Sorting visual interface

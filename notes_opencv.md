@@ -23,6 +23,8 @@ https://docs.opencv.org/3.4/d7/d4d/tutorial_py_thresholding.html
 ## March 6th
 Currently it works pretty well.
 
+Three
+
 Current Limitations:  
 - the beacon needs to be the brightest thing.  
     - It can account for noise
@@ -37,3 +39,6 @@ Thought over the week of some new ideas:
 - Find average brightness, find brightess pixel
   - Then calculate deviation, if deviation is big enough -> positive
 - look at histograms for more ideas
+
+Progress:
+- made histogram
