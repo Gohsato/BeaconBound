@@ -7,7 +7,7 @@ from matplotlib import pyplot as plt
 
 SWITCH = {
     'blurred':True,
-    # 'bright':True,
+    'bright':True,
     'thresh':True,
     'noise':True
 }
@@ -59,6 +59,5 @@ def highlight(img):
 
 if __name__ == '__main__':
     img = cv2.imread('images/image_faulty.jpg')
-    highlight(imgage)
+    highlight(img)
     cv2.waitKey(0)
-        

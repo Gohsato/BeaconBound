@@ -1,8 +1,10 @@
 import os
 import cv2
+import numpy as np
 
 from histogram import grey_hist
 from highlighter import highlight
+from brightest import deviation
 
 if __name__ == "__main__":
 
@@ -16,10 +18,12 @@ if __name__ == "__main__":
             if filename.endswith(".jpg"):
                 file_path = directory_name+"/"+ filename
                 img = cv2.imread(file_path)
-                img2 = img
+
                 print(f"{filename}  shape: {img.shape}", end=" ")
-                grey_hist(img)
-                highlight(img2)
+                # grey_hist(np.copy(img))
+                # highlight(np.copy(img))
+                dev = deviation(np.copy(img))
+                print(f"dev: {dev}")
                 print()
                 cv2.waitKey(0)
                 continue

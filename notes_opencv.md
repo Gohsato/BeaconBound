@@ -42,3 +42,16 @@ Thought over the week of some new ideas:
 
 Progress:
 - made histogram
+
+## March 18th
+Work from this session:
+- Circle detection is probably not worth the effort (its kinda really hard)
+  - Might be able to do it after a threshold or something
+  - Do not pursue circle finding
+- Finding the brightest pixel, then calculating the deviation works well
+  
+Next step is to combine deviation-alg with threshold-alg
+Then need to test.
+
+After detection engine is made
+begin infrastucture for actual app.
