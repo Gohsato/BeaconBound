@@ -29,14 +29,6 @@ def highlight(img):
 
     show_img('blurred',blurred_img)
 
-    # Find Brghtest Pixel and circle
-    (minVal, maxVal, minLoc, maxLoc) = cv2.minMaxLoc(blurred_img)
-    image = orig.copy()
-    circle_radius = 25
-    cv2.circle(image, maxLoc, circle_radius, (255, 0, 0), 2)
-
-    show_img('bright', image)
-
     # Thresolding
     substraction_constant = 0
     thresh_image = cv2.adaptiveThreshold(blurred_img,255,cv2.ADAPTIVE_THRESH_MEAN_C,\
@@ -55,7 +47,8 @@ def highlight(img):
 
     # Count nonzero
     num_pix = cv2.countNonZero(noiseless_image)
-    print(f"Number of ligh pix: {num_pix} ", end=" ")
+    # print(f"Number of ligh pix: {num_pix} ", end=" ")
+    return num_pix
 
 if __name__ == '__main__':
     img = cv2.imread('images/image_faulty.jpg')

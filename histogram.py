@@ -42,7 +42,6 @@ def grey_hist(src):
         cv.line(histImage, ( bin_w*(i-1), hist_h - int(round(hist[i-1][0])) ),
                 ( bin_w*(i), hist_h - int(round(hist[i][0])) ),
                 ( 255, 0, 0), thickness=2)
-    cv.imshow('Source image', src)
     cv.imshow('calcHist Demo', histImage)
 
 

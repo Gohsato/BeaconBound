@@ -47,11 +47,21 @@ Progress:
 Work from this session:
 - Circle detection is probably not worth the effort (its kinda really hard)
   - Might be able to do it after a threshold or something
-  - Do not pursue circle finding
+  
 - Finding the brightest pixel, then calculating the deviation works well
   
+Consider square detection
+
 Next step is to combine deviation-alg with threshold-alg
 Then need to test.
+can possibly improve deviation formula instead of max/avg.
+IQR? std dev?
 
 After detection engine is made
+Also can do while waiting for more test data.
 begin infrastucture for actual app.
+
+next time:
+- try square detection
+- color sampling
+- think about how to setup the app

@@ -25,11 +25,13 @@ def deviation(img):
     cv2.circle(image, maxLoc, circle_radius, (255, 0, 0), 2)
 
 
-    cv2.imshow('bright',image)
+    cv2.imshow('brightest',image)
 
     avg = blurred_img.mean()
     # print(f"Avg: {avg}, Max: {maxVal}")
-    return maxVal/avg
+
+    dev = num_pix = np.around(maxVal/avg,decimals=3)
+    return dev
 
 if __name__ == '__main__':
     img = cv2.imread('images/image_1.jpg')

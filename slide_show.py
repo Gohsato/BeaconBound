@@ -8,7 +8,12 @@ from brightest import deviation
 
 if __name__ == "__main__":
 
-    directory_names = ["images","negatives","positives"]
+    directory_names = [
+        # "images",
+        # "negatives",
+        # "positives",
+        "images\march18"
+    ]
 
     for directory_name in directory_names: 
         directory = os.fsencode(directory_name)
@@ -19,11 +24,11 @@ if __name__ == "__main__":
                 file_path = directory_name+"/"+ filename
                 img = cv2.imread(file_path)
 
-                print(f"{filename}  shape: {img.shape}", end=" ")
-                # grey_hist(np.copy(img))
-                # highlight(np.copy(img))
+                print(f"{filename}", end=" ")
+                grey_hist(np.copy(img))
+                bright_pixels = highlight(np.copy(img))
                 dev = deviation(np.copy(img))
-                print(f"dev: {dev}")
+                print(f"pix: {bright_pixels}, dev: {dev}")
                 print()
                 cv2.waitKey(0)
                 continue
