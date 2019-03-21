@@ -6,8 +6,8 @@ import cv2
 from matplotlib import pyplot as plt
 
 def deviation(img):
-    img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     orig = img
+    img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
     # Config
     blur_radius = 41

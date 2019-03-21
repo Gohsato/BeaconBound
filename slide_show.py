@@ -5,6 +5,7 @@ import numpy as np
 from histogram import grey_hist
 from highlighter import highlight
 from brightest import deviation
+from corner import find_corner_fast
 
 if __name__ == "__main__":
 
@@ -28,6 +29,7 @@ if __name__ == "__main__":
                 grey_hist(np.copy(img))
                 bright_pixels = highlight(np.copy(img))
                 dev = deviation(np.copy(img))
+                find_corner_fast(img)
                 print(f"pix: {bright_pixels}, dev: {dev}")
                 print()
                 cv2.waitKey(0)

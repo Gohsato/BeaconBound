@@ -65,3 +65,8 @@ next time:
 - try square detection
 - color sampling
 - think about how to setup the app
+
+## March 20th
+
+Implemented FAST corner detection.
+works well under some circumstaces, not under others
