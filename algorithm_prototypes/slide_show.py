@@ -13,7 +13,8 @@ if __name__ == "__main__":
         # "images",
         # "negatives",
         # "positives",
-        "images\march18"
+        # "images\march18",
+        "images\march24"
     ]
 
     for directory_name in directory_names: 
@@ -26,10 +27,11 @@ if __name__ == "__main__":
                 img = cv2.imread(file_path)
 
                 print(f"{filename}", end=" ")
+                cv2.imshow("original", img)
                 grey_hist(np.copy(img))
                 bright_pixels = highlight(np.copy(img))
                 dev = deviation(np.copy(img))
-                find_corner_fast(img)
+                # find_corner_fast(img)
                 print(f"pix: {bright_pixels}, dev: {dev}")
                 print()
                 cv2.waitKey(0)

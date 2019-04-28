@@ -41,7 +41,6 @@ def find_corner_fast(img):
     for marker in kp:
         img3 = cv2.drawMarker(img3, tuple(int(i) for i in marker.pt), color=(255, 0, 0))
     cv2.imshow('fast_false.png',img3)
-    cv2.imshow('original',img)
 
 
 if __name__ == '__main__':

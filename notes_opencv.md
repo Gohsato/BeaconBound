@@ -70,3 +70,26 @@ next time:
 
 Implemented FAST corner detection.
 works well under some circumstaces, not under others
+
+## April 3rd
+
+Brightest pixel works well when elevation is low
+- may have to tune the threshold with some kind of dynamic value that could use the time-order of the pictures to calculate the threshold
+
+Future work on alg:
+- use different color sampling
+- try to go back to square detection? need to know if there'll be squares
+  
+For now need to switch to infrastructure
+- algorithm can just be brightness devation based
+
+Class: BeaconFinder
+- Maintains state to have dynamic params
+- can save images to file?
+
+methods:
+- consumes image filenames => bool if beacon found
+- method to return params
+
+## April 10th
+
